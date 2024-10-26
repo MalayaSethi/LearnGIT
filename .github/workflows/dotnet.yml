@@ -15,7 +15,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: GetCode
+      uses: actions/checkout@v4
   
     - name: PowerShell script
       # You may pin to the exact commit or the version.
@@ -25,3 +26,4 @@ jobs:
         # PowerShell script to execute in Actions-hydrated context
         script: write-host "Hello"
            
+    
